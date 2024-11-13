@@ -1,0 +1,23 @@
+### /GET findAll
+GET {{baseUrl}}:{{portNum}}/coffees HTTP/1.1
+
+### /GET findAll with pagination query
+GET {{baseUrl}}:{{portNum}}/coffees?limit=10&offset=22 HTTP/1.1
+
+### /GET findOne
+GET {{baseUrl}}:{{portNum}}/coffees/1223
+
+### /POST create
+POST {{baseUrl}}:{{portNum}}/coffees
+Content-Type: application/json; charset=UTF-8
+
+{
+    "name": "yoonsang",
+    "brand": "Buddy Brew"
+}
+
+### /PATCH update
+PATCH {{baseUrl}}:{{portNum}}/coffees/22
+
+### /DELETE delete
+DELETE {{baseUrl}}:{{portNum}}/coffees/255

@@ -1,3 +1,17 @@
 {
-    "DockerRun.DisableAutoGenerateConfig": true
+    "DockerRun.DisableAutoGenerateConfig": true,
+    "rest-client.environmentVariables": {
+        "$shared": {
+            "baseUrl": "http://localhost",
+            "signingKey": "testjwt"
+        },
+        "development": {
+            "title": "development title",
+            "portNum": "3000",
+        },
+        "production": {
+            "title": "production title",
+            "portNum": "3000",
+        }
+    }
 }
