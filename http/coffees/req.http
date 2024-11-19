@@ -2,7 +2,7 @@
 GET {{baseUrl}}:{{portNum}}/coffees HTTP/1.1
 
 ### /GET findAll with pagination query
-GET {{baseUrl}}:{{portNum}}/coffees?limit=10&offset=22 HTTP/1.1
+GET {{baseUrl}}:{{portNum}}/coffees?limit=2&offset=2 HTTP/1.1
 
 ### /GET findOne
 GET {{baseUrl}}:{{portNum}}/coffees/1223
@@ -17,7 +17,12 @@ Content-Type: application/json; charset=UTF-8
 }
 
 ### /PATCH update
-PATCH {{baseUrl}}:{{portNum}}/coffees/22
+PATCH {{baseUrl}}:{{portNum}}/coffees/4
+
+{
+    "name": "Changed!",
+    "brand": "Hacked!"
+}
 
 ### /DELETE delete
-DELETE {{baseUrl}}:{{portNum}}/coffees/255
+DELETE {{baseUrl}}:{{portNum}}/coffees/5
