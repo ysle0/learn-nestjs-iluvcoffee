@@ -13,11 +13,16 @@ Content-Type: application/json; charset=UTF-8
 
 {
     "name": "yoonsang",
-    "brand": "Buddy Brew"
+    "brand": "Buddy Brew",
+    "flavors": [
+        "vanilla",
+        "cherry"
+    ]
 }
 
 ### /PATCH update
 PATCH {{baseUrl}}:{{portNum}}/coffees/4
+Content-Type: application/json; charset=UTF-8
 
 {
     "name": "Changed!",
